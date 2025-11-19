@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Bank - Pay Bill</title>
+    <style>
+        body { font-family: Arial; background: #f3f4f6; padding: 40px; }
+        .container {
+            width: 400px; margin: 40px auto; padding: 30px;
+            background: white; border-radius: 10px;
+            box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            width: 100%; padding: 12px; margin: 10px 0;
+            border-radius: 5px; border: 1px solid #ccc;
+        }
+        button {
+            width: 100%; padding: 12px;
+            background: #2563eb; color: white;
+            border: none; border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bill Payment</h2>
+        <form action="success.html" method="get">
+            <label>Payee:</label>
+            <select required>
+                <option>Utility Demo Account</option>
+                <option>Credit Card Demo</option>
+                <option>Insurance Demo</option>
+            </select>
+
+            <label>Amount:</label>
+            <input type="number" placeholder="Enter amount" required>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+</body>
+</html>
